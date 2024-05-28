@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <style>
+   
+   body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      overflow: auto;
+      background-color: rgb(231, 230, 224);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'fantasy';
+      font-stretch: expanded;
+    }
+
+
+    header {
+      background-color: rgb(207, 205, 199);
+      padding: 5px;
+      text-align: center;
+      font-size: small;
+      color: #333;
+    }
+
+ 
+
+
+
+/*    !!!!! setting up navigation bar location and specifications     */
+
+    nav {
+      justify-content: center;
+      background-color: rgb(231,230,224);
+      padding: 4px;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      margin: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+
+/*   ^^^^^  setting up navigation bar location and specifications     */
+
+
+
+  
+
+
+
+
+/*          !!!!! side sections           */
+
+
+/*position of txt vs image*/
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /*position of txt vs image*/
+    section {
+      flex: 1;
+      padding: 20px;
+    }
+
+    /*position of txt vs image*/
+    section img {
+      width: 100%;
+      height: auto;
+      max-height: 100vh;
+    }
+
+    /*position of txt vs image*/
+    main section:nth-child(1) {
+      flex: 1;
+    }
+    
+    /*txtbox w background*/
+      main section:nth-child(2) {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /*txtbox w background*/
+    main section:nth-child(2) div {
+      background-color: rgb(240, 239, 238);
+      margin-bottom: 10px; 
+      padding: 10px;
+      width: calc(100% - 40px); 
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+     /* added image in txtbox */
+     main section:nth-child(2) div img a {
+      width: 12.5%;
+      height: 50%; 
+      margin: auto;
+      box-sizing: border-box;
+      
+     }
+
+
+     .centered-image {
+        width:8em;
+        height: auto;
+        margin: auto; 
+        display: block;
+        margin-top: 50%; /* Center the image vertically */
+        transform: translateY(-50%);
+     }
+
+
+
+    /* make image beside txt in txtbox */
+    main section:nth-child(2) div p, p1 {
+        flex: 1; 
+        margin-left: 6px; 
+    }
+
+    /*    ^^^^^   side sections      */
+
+
+
+
+
+/*  !!!!! txt and font specs */
+
+
+    h1 {
+        padding:4px;
+    }
+
+
+    h2 {
+        font-size: large;
+    }
+
+
+    p, p1 {
+        font-size: small;
+        font-weight: 5;
+    }
+
+  
+
+    
+/* ^^^^^ txt and font specs */
+
+
+
+
+
+
+/*   !!!!! dropdown menu specifications     */   
+    .dropdown {
+            float: left;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(238,237,235);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown .dropbtn img {
+            width: 28px; 
+            height: 32px; 
+            margin-right: 0 ;
+            }   
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            }
+/*   ^^^^^ dropdown menu specifications     */ 
+
+.flip-upside-down {
+                transform: rotateX(180deg);
+            }
+
+  </style>
+</head>
+
+
+
+
+
+
+<body>
+
+
+    <header>
+        <h1>MY TECHNICAL PROJECTS AND EXPERIENCE</h1>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <img src="1548342.png" alt="Dropdown Icon">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="homepage.html">HOME</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="services.html">SERVICES</a>
+                <a href="conatct.html">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+  <main>
+
+    <section>
+        <img src="1.jpg" alt="Your Image">
+        <img src="1.jpg" alt="Your Image" class="flip-upside-down">
+    </section>
+
+
+
+
+    <section>
+    
+        <h2>Fungi Edibility Convolutional Neural Network Application</h2>
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+        
+       
+            <a href="https://github.com/akaradjov/fungiedibilityclassification" target="Fungi Project Github Link">
+                <img src="githublogo.png" alt="Additional Image" class="centered-image">
+            </a>
+                <p1>
+                My goal for this project was to be able to build an artifical intelligence model 
+                using a deep learning technique called Convolutional Neural Network.
+                A Convolutional Neural Network Application is essientially a photo classifyer system. 
+                This type of deep learning technique is able to classify an image of a mushroom, 
+                that is uploaded to the system. This application specifically focuses on different 
+                types of Fungi, that are commonly found on the west coast of North America. 
+                The application I have built will then determine
+                if the species of Fungi is apart of an either poisonous or edible genus of fungi.
+                This application is for individuals who are not expert 
+                mycologists an strictly for educational purposes.
+                
+                <br>
+                <br>
+               
+                For a full project in depth run down click the Github icon 
+                to be redirected to my Github page for the project.
+              
+                </p1>
+        </div>
+
+        <h2>Predicting the Functionality of Water Wells in Tanzania Using AI</h2>
+        <div>
+            <a href="https://github.com/akaradjov/tanzanian-water-wells" target="Fungi Project Github Link">
+                <img src="githublogo.png" alt="Additional Image" class="centered-image">
+            </a>
+                <p>
+                My goal for this project was to be able to build an artifical intelligence model 
+                using a deep learning technique called Convolutional Neural Network.
+                A Convolutional Neural Network Application is essientially a photo classifyer system. 
+                This type of deep learning technique is able to classify an image of a mushroom, 
+                that is uploaded to the system. This application specifically focuses on different 
+                types of Fungi, that are commonly found on the west coast of North America. 
+                The application I have built will then determine
+                if the species of Fungi is apart of an either poisonous or edible genus of fungi.
+                This application is for individuals who are not expert 
+                mycologists an strictly for educational purposes.
+                
+                <br>
+                <br>
+               
+                For a full project in depth run down click the Github icon 
+                to be redirected to my Github page for the project.
+              
+                </p>
+        </div>
+
+        <h2>Analysing Customer Opinoins from Tweets</h2>
+        <div>
+            <a href="https://github.com/akaradjov/tanzanian-water-wells" target="Fungi Project Github Link">
+                <img src="githublogo.png" alt="Additional Image" class="centered-image">
+            </a>
+                <p>
+                    Our team's goal is to extract useful info from tweets on Apple products and explore the emotion distribution within each target product, with that emotion being either positive or negative.
+                    <br>
+                    By locking in on these specifications we are able to identify any pain points or repetitive results in a negatively directed manner, towards any target products and provide insight for any improvements or enhancements that Apple can move forward based on the public view.
+                    <br>
+                    <br>
+                    Utilize the dataset to build a brand sentiment analysis model. Train a machine learning or deep learning model using the labeled tweets as input and their corresponding sentiment (positive or negative) as the output.
+                
+                <br>
+                <br>
+                <br>
+               
+                For a full project in depth run down click the Github icon 
+                to be redirected to my Github page for the project.
+              
+                </p>
+        </div>
+        
+      </section>
+
+  </main>
+
+</body>
+
+<style>
+
+/* page backgrnd colour */
+    body {
+        margin: 0;
+        overflow: auto;
+        background-color: rgb(231,230,224); 
+    }
+  </style> 
+
+
+
+</html>
