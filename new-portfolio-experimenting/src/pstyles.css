@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Luminari';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Luminari'), url('Luminari-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Playfair'), url('PlayfairDisplay.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Jacquard 12 , system-ui';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Jacquard 12'), url('Jacquard12-Regular.ttf') format('ttf');
+}
+
+
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+.centered-text {
+    text-align: center;
+    font-size: 48px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for different project sections */
+.content-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    opacity: 0; 
+    transition: opacity 0.5s ease-out; /* transition opacity */
+}
+
+.content-section2 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    opacity: 0; /* initially hidden */
+    transition: opacity 0.5s ease-out; /* Smooth transition for opacity */
+}
+
+.content-section3 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    opacity: 0; /* initially hidden */
+    transition: opacity 0.5s ease-out; /* Smooth transition for opacity */
+}
+
+
+
+[data-aos].aos-animate .content-section {
+    opacity: 1; /* Fully visible when AOS triggers the animation */
+}
+
+
+h2 {
+    margin: 0 0 20px 0;
+    font-size: 25px;
+}
+
+
+h2-2 {
+    margin: 0 0 20px 0;
+    font-size: 15px;
+}
+
+
+h3 {
+    margin: 0 0 20px 0;
+    font-size: 15px;
+}
+
+h4 {
+    margin-bottom: -200px;
+    text-align: center;
+    font-weight: lighter;
+
+}
+
+.bio-text {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 72%; 
+    margin-top: 20px; /* space between heading and paragraph */
+    font-size: 24px;
+}
+.bio-image {
+    width: 28%; 
+    margin-right: 20px; /* space for image and text */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.bio-text2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 72%; /* Adjust width as needed */
+    margin-top: 20px; /* Spacing between heading and paragraph */
+    font-size: 24px;
+}
+
+.bio-text3 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 72%; /* Adjust width as needed */
+    margin-top: 20px; /* Spacing between heading and paragraph */
+    font-size: 24px;
+}
+
+
+
+
+/*Spacers*/
+
+.spacer1 {
+    height: 125px; 
+}
+
+.spacer2 {
+    height: 85px; 
+}
+
+
+.spacer3 {
+    height: 85px; 
+}
+
+
+.spacer4 {
+    height: 5px; 
+}
+
+.testspacer {
+    margin-top: -20px
+}
+
+
+/*Page buttons bottom of page*/
+
+.button-container {
+    margin-top: -100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: translateY(100%); /* Start off-screen */
+    opacity: 0; /* Start as invisible */
+}
+
+.page-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #070707;
+    background-color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.page-button:hover {
+    background-color: #f6f6fa;
+}
+
+
+
+[data-aos].aos-animate .button-container {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/*GitHub link button section and text*/
+
+.content-wrapper1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    margin-top: -140px; /* This might be causing unexpected alignment issues */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column; /* hopefully ensures vertical alignment of all content */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;  
+}
+
+.content-section4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-section4 a img {
+    max-width: 120px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-section4 a:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+.bio-container6 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(202, 202, 202, 0.1);
+    width: 95%; /* Adjust width as needed */
+    margin-top: 20px; /* Spacing between heading and paragraph */
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-wrapper6 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-image6 {
+    width: 28%; /* Adjust width as needed */
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.bio-text6 {
+    width: 72%; /* Adjust width as needed */
+}
+
+.content-section6 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    opacity: 0; /* initially hidden */
+    transition: opacity 0.5s ease-out; /* Smooth transition for opacity */
+}

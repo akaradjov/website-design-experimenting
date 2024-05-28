@@ -1,0 +1,19 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 500px; /* Set a maximum width for the initial image */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
