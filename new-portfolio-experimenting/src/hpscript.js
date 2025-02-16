@@ -42,3 +42,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+document.addEventListener("scroll", function () {
+    let scrollY = window.scrollY;
+    let windowHeight = window.innerHeight;
+    let transitionPoint = windowHeight * 0.5; // Adjust for earlier/later transition
+
+    let bg1 = document.querySelector(".bg1");
+    let bg2 = document.querySelector(".bg2");
+
+    // Adjust opacity based on scroll position
+    let fadeOpacity = Math.max(0, 1 - scrollY / transitionPoint);
+    bg1.style.opacity = fadeOpacity;
+
+    // Once fully faded out, lock the second image
+    if (scrollY >= transitionPoint) {
+        bg2.style.opacity = 1;
+    } else {
+        bg2.style.opacity = 0;
+    }
+});
